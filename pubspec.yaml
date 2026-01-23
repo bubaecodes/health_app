@@ -36,6 +36,8 @@ dependencies:
   cupertino_icons: ^1.0.8
   get: ^4.7.3
   google_fonts: ^7.0.1
+  flutter_native_splash: ^2.4.7
+  get_storage: ^2.1.1
 
 dev_dependencies:
   flutter_test:
@@ -64,6 +66,7 @@ flutter:
     - assets/images/
     - assets/images/onboarding/
     - assets/images/login_signup/
+    - assets/images/splash/
     - assets/fonts/
 
   # An image asset can refer to one or more resolution-specific "variants", see

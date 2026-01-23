@@ -5,7 +5,7 @@ class MyColors {
 
   ///Background Color
   static const Color lightBlue = Color(0xFFEAF6FF);
-  //static const Color lighterBlue = Color(0xFF1E88E5);
+  static const Color darkerBlue = Color(0xFF03002E);
   static const Color darkBlue = Color(0xFF0D47A1);
   static const Color blue = Color(0xFF1E88E5);
   static const Color white = Color(0xFFFFFFFF);
