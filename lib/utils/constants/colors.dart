@@ -9,6 +9,10 @@ class MyColors {
   static const Color darkBlue = Color(0xFF0D47A1);
   static const Color blue = Color(0xFF1E88E5);
   static const Color white = Color(0xFFFFFFFF);
+  //static const Color homeBlueBg = Color(0xFF000023); //this
+  static const Color homeBlueBg = Color(0xFF00001C);
+  static const Color offWhite = Color(0xFFFDFFF5);
+  static const Color creamBg = Color(0xFFEFEFEF);
 
 
   /// text colors

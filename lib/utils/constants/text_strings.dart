@@ -1,5 +1,9 @@
 class TheText {
 
+  ///App Name
+  static const String appName = 'HepaCare';
+  static const String appSlogan = 'Your Partner in Liver Health';
+
   /// onboarding texts
   static const String onBoardingTitle1 = 'Understanding Hepatitis';
   static const String onBoardingTitle2 = 'Connect with Doctors';
@@ -20,4 +24,33 @@ class TheText {
   /// signup texts
   static const String signupTitle = 'Create Account';
   static const String signupSubTitle = 'Signup to get started';
+  static const String signupBtnText = 'Sign Up';
+  static const String signupPrivacyText1 = 'I agree to the ';
+  static const String signupPrivacyText2 = 'Terms of Service ';
+  static const String signupPrivacyText3 = 'and ';
+  static const String signupPrivacyText4 = 'Privacy Policy';
+  static const String signupFooter1 = 'Already have an account? ';
+  static const String signupFooter2 = 'Log in';
+
+  /// signup texts
+  static const String forgotPasswordTitle = 'Forgot Password?';
+  static const String forgotPasswordSubTitle = 'Enter your email address and we\'ll send you a link to reset your password.';
+  static const String forgotPasswordBtn = 'Send Reset Link';
+  static const String forgotPasswordFooterText = 'Back to Login';
+
+  /// home texts
+  static const String homeFirstContainerTitle = 'Manage Hepatitis';
+  static const String homeFirstContainerSubTitle = 'Track and control your treatment';
+  static const String homeFirstContainerBtnLink = 'Learn More';
+
+  /// home-appointment texts
+  static const String homeAppointmentTitle = 'Upcoming Appointments';
+  static const String homeArticleTitle = 'Latest Articles';
+  static const String homeArticleHeadingA = 'Understanding Hepatitis B';
+  static const String homeArticleHeadingB = 'New Treatments for Hepatitis C';
+  static const String homeSymptoms = 'Symptoms Checker';
+  static const String homeFindDoctors = 'Find Doctors';
+
+  /// appointment-screen texts
+  static const String appointmentScreenAppbar = 'Appointments';
 }
