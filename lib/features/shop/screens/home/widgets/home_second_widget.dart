@@ -51,11 +51,9 @@ class HomeSecondWidget extends StatelessWidget {
                     bottomRight: Radius.circular(screenWidth * 0.008),
                     bottomLeft: Radius.circular(screenWidth * 0.008),
                   ),
-                  //color: Colors.blueAccent[400],
                   color: isDark ? Colors.blue[300] : Colors.blue[900],
                 ),
                 child: Image.asset(
-                  // MyImages.homeTodoLogo,
                   image,
                   height: screenHeight * 0.04,
                   width: screenWidth * 0.04,
@@ -70,8 +68,8 @@ class HomeSecondWidget extends StatelessWidget {
                   width: screenWidth * 0.04,
                   child: MyText(
                     title: text,
-                    fontVariation: FontVariation.weight(500),
-                    fontSize: screenWidth * 0.036,
+                    fontVariation: FontVariation.weight(600),
+                    fontSize: screenWidth * 0.037,
                     color: MyColors.white,
                     maxLines: 2,
                   ),

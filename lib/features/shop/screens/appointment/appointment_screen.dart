@@ -20,6 +20,7 @@ class AppointmentScreen extends StatelessWidget {
             height: double.infinity,
             padding: EdgeInsets.only(
               top: screenHeight * 0.027,
+              //bottom: screenHeight * 0.02,
             ),
             decoration: BoxDecoration(
               color: isDark ? MyColors.darkerBlue : Colors.blueAccent[400]

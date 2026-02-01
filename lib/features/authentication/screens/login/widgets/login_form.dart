@@ -15,7 +15,7 @@ class LoginForm extends StatelessWidget {
       height: screenHeight / 2.6,
       width: screenWidth * 0.9,
       decoration: BoxDecoration(
-        color: isDark ? Colors.black : MyColors.white,
+        color: isDark ? MyColors.homeBlueBg : MyColors.white,
         borderRadius: BorderRadius.circular(18)
       ),
       child: Padding(
@@ -70,10 +70,6 @@ class LoginForm extends StatelessWidget {
                           borderRadius: BorderRadius.circular(10),
                           borderSide: BorderSide(color: MyColors.darkBlue, width: 0.2),
                         ),
-                        // enabledBorder: OutlineInputBorder(
-                        //   borderRadius: BorderRadius.circular(10),
-                        //   borderSide: BorderSide(color: Colors.grey),
-                        // ),
                       ),
                     ),
                   ),

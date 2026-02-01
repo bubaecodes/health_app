@@ -74,7 +74,7 @@ class HomeAppointment extends StatelessWidget {
                     ),
                   ),
 
-                  SizedBox(width: screenWidth * 0.015,),
+                  SizedBox(width: screenWidth * 0.02,),
 
                   /// doc name and time
                   Column(

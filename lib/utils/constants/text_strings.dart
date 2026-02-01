@@ -49,8 +49,13 @@ class TheText {
   static const String homeArticleHeadingA = 'Understanding Hepatitis B';
   static const String homeArticleHeadingB = 'New Treatments for Hepatitis C';
   static const String homeSymptoms = 'Symptoms Checker';
-  static const String homeFindDoctors = 'Find Doctors';
+  static const String homeVaccine = 'Hepatitis B Vaccination';
 
   /// appointment-screen texts
   static const String appointmentScreenAppbar = 'Appointments';
+  static const String appointmentLabHeader = 'Lab Test Bookings';
+  static const String appointmentHepatitisText = 'Hepatitis Blood Test';
+  static const String appointmentHepatitisBtnText = 'Book Lab Test';
+  static const String appointmentDocConsultationHeader = 'Doctor Consultation';
+  static const String appointmentBookPhysicalBtn = 'Book Physical Appointment';
 }

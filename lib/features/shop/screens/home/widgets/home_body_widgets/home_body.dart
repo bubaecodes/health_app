@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:health_app/common/widgets/mytext.dart';
+import 'package:health_app/features/authentication/controllers/signup/signup_controller.dart';
 import 'package:health_app/features/shop/screens/home/widgets/home_body_widgets/home_appointment.dart';
 import 'package:health_app/features/shop/screens/home/widgets/home_body_widgets/home_article.dart';
 import 'package:health_app/features/shop/screens/home/widgets/home_body_widgets/home_article_second_item.dart';
@@ -10,7 +11,6 @@ import 'package:health_app/utils/constants/colors.dart';
 import 'package:health_app/utils/constants/image_strings.dart';
 import 'package:health_app/utils/constants/text_strings.dart';
 import 'package:health_app/utils/helpers/helper_function.dart';
-import 'package:health_app/utils/routes/routes.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -19,15 +19,16 @@ class HomeBody extends StatelessWidget {
   Widget build(BuildContext context) {
     final screenWidth = MyHelperFunctions.screenWidth();
     final screenHeight = MyHelperFunctions.screenHeight();
+    final controller = Get.put(SignupController());
     final isDark = MyHelperFunctions.isDarkMode(context);
     return Container(
       height: screenHeight * 0.76,
-      width: screenWidth * 0.94,
+      width: screenWidth,
       decoration: BoxDecoration(
         color: isDark ? MyColors.homeBlueBg : MyColors.offWhite,
         borderRadius: BorderRadius.only(
-          topLeft: Radius.circular(screenHeight * 0.05),
-          topRight: Radius.circular(screenHeight * 0.05),
+          topLeft: Radius.circular(screenHeight * 0.04),
+          topRight: Radius.circular(screenHeight * 0.04),
         )
       ),
         child: SingleChildScrollView(
@@ -46,7 +47,7 @@ class HomeBody extends StatelessWidget {
 
                 SizedBox(height: screenHeight * 0.016,),
 
-                /// symptoms checker and find doctor
+                /// symptoms checker and vaccine
                 Row(
                   children: [
                     HomeSecondWidget(
@@ -58,10 +59,10 @@ class HomeBody extends StatelessWidget {
                     ),
                     SizedBox(width: screenWidth * 0.03,),
                     HomeSecondWidget(
-                      text: TheText.homeFindDoctors,
+                      text: TheText.homeVaccine,
                       image: MyImages.homeHealthCareLogo2,
                       onTap: (){
-                        Get.toNamed(Routes.appointmentScreen);
+                        controller.openWebsite('https://www.nhs.uk/vaccinations/hepatitis-b-vaccine/');
                       },
                     ),
                   ],
@@ -106,7 +107,7 @@ class HomeBody extends StatelessWidget {
                 Row(
                   children: [
                     HomeArticle(),
-                    SizedBox(width: screenWidth * 0.02,),
+                    SizedBox(width: screenWidth * 0.03,),
                     HomeArticleSecondItem(),
                   ],
                 ),

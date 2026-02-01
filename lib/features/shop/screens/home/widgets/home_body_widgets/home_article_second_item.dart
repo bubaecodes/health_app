@@ -88,7 +88,7 @@ class HomeArticleSecondItem extends StatelessWidget {
                   child: Image.asset(
                     MyImages.homeSyringeImg,
                     height: screenHeight * 0.07,
-                    width: screenWidth * 0.19,
+                    width: screenWidth * 0.2,
                   ),
                 ),
               ],

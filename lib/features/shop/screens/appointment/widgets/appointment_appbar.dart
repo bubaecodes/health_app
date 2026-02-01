@@ -25,7 +25,7 @@ class AppointmentAppbar extends StatelessWidget {
         children: [
           InkWell(
             onTap: (){
-              Get.toNamed(Routes.homeScreen);
+              Get.toNamed(Routes.bottomNavMenu);
             },
             child: Icon(
               Icons.chevron_left_outlined,
@@ -39,7 +39,7 @@ class AppointmentAppbar extends StatelessWidget {
           MyText(
             title: TheText.appointmentScreenAppbar,
             fontVariation: FontVariation.weight(600),
-            fontSize: 19,
+            fontSize: screenWidth * 0.058,
             color: MyColors.white,
             //color: isDark ? MyColors.white : MyColors.darkerBlue,
           )

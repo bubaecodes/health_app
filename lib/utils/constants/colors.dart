@@ -13,6 +13,7 @@ class MyColors {
   static const Color homeBlueBg = Color(0xFF00001C);
   static const Color offWhite = Color(0xFFFDFFF5);
   static const Color creamBg = Color(0xFFEFEFEF);
+  static const Color lightGreenBg = Color(0xFF90EE90);
 
 
   /// text colors

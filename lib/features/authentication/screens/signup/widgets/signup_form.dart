@@ -20,7 +20,7 @@ class SignupForm extends StatelessWidget {
       height: screenHeight / 1.8,
       width: screenWidth * 0.9,
       decoration: BoxDecoration(
-        color: isDark ? Colors.black : MyColors.white,
+        color: isDark ? MyColors.homeBlueBg : MyColors.white,
         borderRadius: BorderRadius.circular(18)
       ),
       child: Padding(

@@ -38,7 +38,6 @@ class HomeAppbar extends StatelessWidget {
                     Icons.person,
                     color: MyColors.white,
                     size: screenHeight * 0.04,
-                    //color:  isDark ? MyColors.white : MyColors.darkerBlue,
                   ),
                 ),
               ),

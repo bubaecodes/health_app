@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
         body: Stack(
           children: [
             Container(
-              width: double.infinity,
+              width: screenWidth,
               height: double.infinity,
               padding: EdgeInsets.only(
                 top: screenHeight * 0.027,
@@ -26,7 +26,7 @@ class HomeScreen extends StatelessWidget {
                 image: DecorationImage(
                   image: AssetImage(isDark ? MyImages.darkLoginSignupBg : MyImages.lightLoginSignupBg),
                   fit: BoxFit.cover
-                )
+                ),
               ),
               child: Column(
                 children: [
