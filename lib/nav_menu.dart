@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:health_app/common/widgets/mytext.dart';
 import 'package:health_app/features/shop/screens/appointment/appointment_screen.dart';
+import 'package:health_app/features/shop/screens/health_tips/health_tips_screen.dart';
 import 'package:health_app/features/shop/screens/home/home_screen.dart';
 import 'package:health_app/utils/constants/colors.dart';
 import 'package:health_app/utils/constants/sizes.dart';
@@ -137,13 +138,9 @@ class NavigationController extends GetxController{
   final screens =[
     const HomeScreen(),
     const AppointmentScreen(),
-    Container(color: Colors.purple),
+    const HealthTipsScreen(),
+    //Container(color: Colors.purple),
     //Container(color: Colors.orange),
     //Container(color: Colors.blue),
-
-    // const HomeScreen(),
-    // const StoreScreen(),
-    // const FavoriteScreen(),
-    // const SettingsScreen(),
   ];
 }

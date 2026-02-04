@@ -58,4 +58,11 @@ class TheText {
   static const String appointmentHepatitisBtnText = 'Book Lab Test';
   static const String appointmentDocConsultationHeader = 'Doctor Consultation';
   static const String appointmentBookPhysicalBtn = 'Book Physical Appointment';
+
+  /// health-tips screen texts
+  static const String healthTipsScreenAppbar = 'Health Tips';
+
+  /// symptoms-checker screen texts
+  static const String symptomsCheckerAppbar = 'Symptoms Checker';
+  static const String symptomsNextBtn = 'Next';
 }

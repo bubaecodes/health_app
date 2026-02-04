@@ -4,7 +4,10 @@ import 'package:health_app/features/authentication/screens/login/login_screen.da
 import 'package:health_app/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:health_app/features/authentication/screens/signup/signup_screen.dart';
 import 'package:health_app/features/shop/screens/appointment/appointment_screen.dart';
+import 'package:health_app/features/shop/screens/health_tips/health_tips_screen.dart';
 import 'package:health_app/features/shop/screens/home/home_screen.dart';
+import 'package:health_app/features/shop/screens/symptoms_checker/symptoms_checker_screen.dart';
+import 'package:health_app/features/shop/screens/symptoms_result/symptoms_result_screen.dart';
 import 'package:health_app/nav_menu.dart';
 import 'package:health_app/utils/routes/routes.dart';
 
@@ -37,6 +40,18 @@ class AppPages {
     GetPage(
       name: Routes.appointmentScreen,
       page: () => const AppointmentScreen(),
+    ),
+    GetPage(
+      name: Routes.healthTipsScreen,
+      page: () => const HealthTipsScreen(),
+    ),
+    GetPage(
+      name: Routes.symptomCheckerScreen,
+      page: () => const SymptomsCheckerScreen(),
+    ),
+    GetPage(
+      name: Routes.symptomsResultScreen,
+      page: () => const SymptomsResultScreen(),
     ),
   ];
 }

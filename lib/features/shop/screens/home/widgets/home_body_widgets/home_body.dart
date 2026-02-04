@@ -11,6 +11,7 @@ import 'package:health_app/utils/constants/colors.dart';
 import 'package:health_app/utils/constants/image_strings.dart';
 import 'package:health_app/utils/constants/text_strings.dart';
 import 'package:health_app/utils/helpers/helper_function.dart';
+import 'package:health_app/utils/routes/routes.dart';
 
 class HomeBody extends StatelessWidget {
   const HomeBody({super.key});
@@ -54,7 +55,7 @@ class HomeBody extends StatelessWidget {
                       text: TheText.homeSymptoms,
                       image: MyImages.homeTodoLogo,
                       onTap: (){
-                        //Get.toNamed(Routes.appointmentScreen);
+                        Get.toNamed(Routes.symptomCheckerScreen);
                       },
                     ),
                     SizedBox(width: screenWidth * 0.03,),
@@ -77,6 +78,8 @@ class HomeBody extends StatelessWidget {
                   color: isDark ? MyColors.white : MyColors.darkerBlue,
                 ),
                 SizedBox(height: screenHeight * 0.01,),
+
+                //TODO: Make the a list view builder
                 HomeAppointment(
                   text: 'Dr. Smith',
                   time: 'Tomorrow, 2:00PM',
@@ -111,6 +114,7 @@ class HomeBody extends StatelessWidget {
                     HomeArticleSecondItem(),
                   ],
                 ),
+                SizedBox(height: screenHeight * 0.01,),
               ],
             ),
           ),

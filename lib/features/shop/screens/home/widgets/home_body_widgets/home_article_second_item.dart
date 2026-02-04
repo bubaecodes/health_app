@@ -25,13 +25,14 @@ class HomeArticleSecondItem extends StatelessWidget {
             vertical: screenHeight * 0.01
         ),
         decoration: BoxDecoration(
-            color: isDark ? MyColors.darkerBlue : MyColors.creamBg,
-            borderRadius: BorderRadius.only(
-              topLeft: Radius.circular(screenWidth * 0.04),
-              topRight: Radius.circular(screenWidth * 0.04),
-              bottomRight: Radius.circular(screenWidth * 0.04),
-              bottomLeft: Radius.circular(screenWidth * 0.04),
-            )
+          color: isDark ? MyColors.darkerBlue : MyColors.creamBg,
+          border: BoxBorder.all(color: MyColors.darkBlue),
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(screenWidth * 0.04),
+            topRight: Radius.circular(screenWidth * 0.04),
+            bottomRight: Radius.circular(screenWidth * 0.04),
+            bottomLeft: Radius.circular(screenWidth * 0.04),
+          ),
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
@@ -87,7 +88,7 @@ class HomeArticleSecondItem extends StatelessWidget {
                 Expanded(
                   child: Image.asset(
                     MyImages.homeSyringeImg,
-                    height: screenHeight * 0.07,
+                    height: screenHeight * 0.068,
                     width: screenWidth * 0.2,
                   ),
                 ),

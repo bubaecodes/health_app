@@ -26,6 +26,7 @@ class HomeArticle extends StatelessWidget {
         ),
         decoration: BoxDecoration(
           color: isDark ? MyColors.darkerBlue : MyColors.creamBg,
+            border: BoxBorder.all(color: MyColors.darkBlue),
           borderRadius: BorderRadius.only(
             topLeft: Radius.circular(screenWidth * 0.04),
             topRight: Radius.circular(screenWidth * 0.04),

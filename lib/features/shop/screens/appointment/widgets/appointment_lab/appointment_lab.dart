@@ -18,6 +18,7 @@ class AppointmentTest extends StatelessWidget {
       width: screenWidth * 0.9,
       height: screenHeight * 0.16,
       decoration: BoxDecoration(
+        border: BoxBorder.all(color: MyColors.darkBlue),
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(screenWidth * 0.045),
           topRight: Radius.circular(screenWidth * 0.045),

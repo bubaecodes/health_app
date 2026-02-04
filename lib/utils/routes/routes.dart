@@ -7,4 +7,7 @@ class Routes {
   static const homeScreen = '/home-screen';
   static const bottomNavMenu = '/bottom-nav-menu';
   static const appointmentScreen = '/appointment-screen';
+  static const healthTipsScreen = '/appointment-screen';
+  static const symptomCheckerScreen = '/symptoms-checkers-screen';
+  static const symptomsResultScreen = '/symptoms-result-screen';
 }

@@ -25,8 +25,12 @@ class MyImages{
   static const String homeHealthCareLogo1 = "assets/images/shop/home_imgs/healthcare-logo1-removebg-preview.png";
   static const String homeHealthCareLogo2 = "assets/images/shop/home_imgs/healthcare-logo2-removebg-preview.png";
   static const String homeTodoLogo = "assets/images/shop/home_imgs/todo-1-removebg-preview.png";
+  static const String homeSafeSex = "assets/images/shop/home_imgs/safe_sex.png";
 
   /// appointment screen
   static const String appointmentLabTestImg = "assets/images/shop/appointments/lab_appointment_test.png";
   static const String appointmentDocHeaderImg = "assets/images/shop/appointments/doc_appointment_header.png";
+
+  /// symptoms checker screen
+  static const String symptomsCheckerImg = "assets/images/shop/appointments/doc_appointment_header.png";
 }
