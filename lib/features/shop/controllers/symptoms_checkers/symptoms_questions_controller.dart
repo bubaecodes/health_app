@@ -1,5 +1,8 @@
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:health_app/features/shop/screens/symptoms_result/symptoms_result_screen.dart';
+
+enum ResultLevel { low, mid, high }
 
 class SymptomsQuestionsController extends GetxController{
   static SymptomsQuestionsController get instance => Get.find();
@@ -28,6 +31,21 @@ class SymptomsQuestionsController extends GetxController{
     answers = List<bool?>.filled(questions.length, null).obs;
   }
 
+  int get totalScore {
+    return answers.where((a) => a == true).length;
+  }
+
+  /// Result category
+  ResultLevel get resultLevel {
+    if (totalScore <= 3) {
+      return ResultLevel.low;
+    } else if (totalScore <= 5) {
+      return ResultLevel.mid;
+    } else {
+      return ResultLevel.high;
+    }
+  }
+
   double get progress {
     return (currentIndex.value + 1) / questions.length;
   }
@@ -45,8 +63,16 @@ class SymptomsQuestionsController extends GetxController{
     if(currentIndex.value < questions.length - 1){
       currentIndex.value ++;
     } else {
-      Get.snackbar('Done', 'You are safe');
+      Get.snackbar(
+        'Done',
+        'Here is your result',
+        backgroundColor: Colors.blue[400],
+        duration: Duration(seconds: 5),
+        //colorText: MyColors.darkBlue
+      );
       Get.to(SymptomsResultScreen());
     }
   }
+
+
 }

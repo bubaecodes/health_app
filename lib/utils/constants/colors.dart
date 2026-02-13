@@ -19,8 +19,17 @@ class MyColors {
   /// text colors
   static const Color textPrimary = Color(0xFF37474F);
   static const Color textSecondary = Color(0xFF607D8B);
-  //static const Color textPrimaryyyy = Color(0xFF1E88E5);
 
+  /// results color
+  static const Color lowResultBackground = Color(0xFFB9F6CA);
+  static const Color midResultBackground = Color(0xFFFFF9C5);
+  static const Color midResultYellow = Color(0xFFF9A825);
+  static const Color midResultDarkYellow = Color(0xFFF57F17);
+  static const Color highResultBackgroundLight = Color(0xFFFFEBEE);
+  static const Color highResultBackground = Color(0xFFFFCDC2);
+  static const Color highResultRed = Color(0xFFE53935);
+  // static const Color lowResultGreen = Color(0xFFADEBB3);
+  // static const Color lowResultDarkGreen = Color(0xFF008000);
 
   /// validations
   static const Color warning = Color(0xFFF9A825);

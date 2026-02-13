@@ -4,6 +4,8 @@ import 'package:health_app/features/authentication/screens/login/login_screen.da
 import 'package:health_app/features/authentication/screens/onboarding/onboarding.dart';
 import 'package:health_app/features/authentication/screens/signup/signup_screen.dart';
 import 'package:health_app/features/shop/screens/appointment/appointment_screen.dart';
+import 'package:health_app/features/shop/screens/book_lab_test/book_lab_screen.dart';
+import 'package:health_app/features/shop/screens/book_physical_consult/book_physical_consult.dart';
 import 'package:health_app/features/shop/screens/health_tips/health_tips_screen.dart';
 import 'package:health_app/features/shop/screens/home/home_screen.dart';
 import 'package:health_app/features/shop/screens/symptoms_checker/symptoms_checker_screen.dart';
@@ -52,6 +54,14 @@ class AppPages {
     GetPage(
       name: Routes.symptomsResultScreen,
       page: () => const SymptomsResultScreen(),
+    ),
+    GetPage(
+      name: Routes.bookLabScreen,
+      page: () => const BookLabScreen(),
+    ),
+    GetPage(
+      name: Routes.bookPhysicalConsultScreen,
+      page: () => const BookPhysicalConsultScreen(),
     ),
   ];
 }

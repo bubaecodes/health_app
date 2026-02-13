@@ -62,7 +62,47 @@ class TheText {
   /// health-tips screen texts
   static const String healthTipsScreenAppbar = 'Health Tips';
 
-  /// symptoms-checker screen texts
+  /// symptoms-checker & result screen texts
   static const String symptomsCheckerAppbar = 'Symptoms Checker';
   static const String symptomsNextBtn = 'Next';
+  ///---
+  static const String symptomsResultAppbar = 'Risk Check Result';
+  static const String symptomsResultBookLabBtn = 'Book Lab Test';
+  static const String symptomsResultLowTitle = 'Low Risk';
+  static const String symptomsResultLowSubtitle = 'Your current responses suggest a low risk of hepatitis. There is no indication of hepatitis from your answers.';
+  static const String symptomsResultMidTitle = 'Moderate Risk';
+  static const String symptomsResultMidSubtitle = 'Your current responses suggest a mid risk of hepatitis.';
+  static const String symptomsResultHighTitle = 'Higher Risk';
+  static const String symptomsResultHighSubtitle = 'See a doctor.';
+
+
+  /// symptoms-checker & result screen texts
+  static const String bookLabAppbar = 'Book Hepatitis Test';
+  static const String bookTestTypeTitle = 'Select Test Type';
+  static const String bookTestTypeDetailsTitle1 = 'Hepatitis Panel (Full)';
+  static const String bookTestTypeDetailsSubtitle1 = 'Covers Hep A, B, C screening. Recommended for first-time test';
+  static const String bookTestTypeDetailsDuration1 = '24-48 hrs';
+  static const String bookTestTypeDetailsTitle2 = 'Hepatitis B Surface Antigen (HBsAg)';
+  static const String bookTestTypeDetailsSubtitle2 = 'Detects active Hep B infection';
+  static const String bookTestTypeDetailsDuration2 = 'Same day result';
+  static const String bookTestTypeDetailsTitle3 = 'Hepatitis C Antibody';
+  static const String bookTestTypeDetailsSubtitle3 = 'Screens for Hep C exposure';
+  static const String bookTestTypeDetailsDuration3 = '24 hrs';
+  static const String bookTestTypeDetailsTitle4 = 'Liver Function Test (LFT)';
+  static const String bookTestTypeDetailsSubtitle4 = 'Check liver health markers';
+  static const String bookTestTypeDetailsDuration4 = 'Paired with Hep test';
+  static const String bookTestLabName = 'Health Clinic';
+  static const String bookTestLocation = '123 Medical Lane, Bronx City, NY';
+  static const String bookTestAppointmentDetails = 'Appointment Details';
+  static const String labAppointmentDate = 'Choose Date';
+  static const String labAppointmentTime = 'Select Time';
+  static const String confirmBookingBtn = 'Confirm Test Selection';
+
+
+  /// Book Physical Appointment screen texts
+  static const String bookPhysicalAppointmentHeader = 'Book Physical Appointment';
+  static const String bookPhysicalAppointmentTime = 'Date & Time';
+  static const String bookPhysicalAppointmentDoc = 'Doctor';
+  static const String bookPhysicalAppointmentReason1 = 'Reason for visit ';
+  static const String bookPhysicalAppointmentReason2 = '(Optional)';
 }

@@ -33,4 +33,13 @@ class MyImages{
 
   /// symptoms checker screen
   static const String symptomsCheckerImg = "assets/images/shop/appointments/doc_appointment_header.png";
+
+  /// book lab test screen
+  static const String bookLabHeaderImg = "assets/images/shop/book_lab/book_test_header.png";
+  static const String bookLabTypeImg1 = "assets/images/shop/book_lab/book_lab_1.png";
+  static const String bookLabTypeImg2 = "assets/images/shop/book_lab/book_lab_2-removebg-preview.png";
+  static const String bookLabTypeImg3 = "assets/images/shop/book_lab/book_lab_3.png";
+
+  /// book Physical Header screen
+  static const String bookPhysicalHeaderImg = "assets/images/shop/book_physical_consult/book_physical_header.png";
 }

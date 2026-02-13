@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:health_app/common/widgets/mytext.dart';
 import 'package:health_app/utils/constants/colors.dart';
 import 'package:health_app/utils/constants/text_strings.dart';
@@ -12,11 +13,11 @@ class AppointmentLabBtn extends StatelessWidget {
     final screenWidth = MyHelperFunctions.screenWidth();
     final screenHeight = MyHelperFunctions.screenHeight();
     final isDark = MyHelperFunctions.isDarkMode(context);
-    //final controller = Get.put(SignupController());
+
     return ElevatedButton(
       /// should have similar function as booking physical consultation
       onPressed: () {
-        //controller.openWebsite('https://my.clevelandclinic.org/health/diseases/hepatitis');
+        Get.toNamed('/book-lab-screen');
       },
       style: ButtonStyle(
         /// minimum size takes off original paddings

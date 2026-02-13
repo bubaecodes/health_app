@@ -10,4 +10,6 @@ class Routes {
   static const healthTipsScreen = '/appointment-screen';
   static const symptomCheckerScreen = '/symptoms-checkers-screen';
   static const symptomsResultScreen = '/symptoms-result-screen';
+  static const bookLabScreen = '/book-lab-screen';
+  static const bookPhysicalConsultScreen = '/book-physical-consult-screen';
 }

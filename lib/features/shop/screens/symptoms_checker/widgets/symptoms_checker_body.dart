@@ -30,7 +30,7 @@ class SymptomsCheckerBody extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             SymptomsBarchartContainer(),
-            SizedBox(height: screenHeight * 0.01,),
+            SizedBox(height: screenHeight * 0.04,),
 
             /// questions
             Obx(
@@ -40,54 +40,41 @@ class SymptomsCheckerBody extends StatelessWidget {
                 fontSize: screenWidth * 0.05,
               ),
             ),
-            SizedBox(height: screenHeight * 0.01,),
+            SizedBox(height: screenHeight * 0.02,),
 
             /// checkboxes
             Container(
               width: screenWidth * 0.9,
-              height: screenHeight * 0.15,
+              height: screenHeight * 0.18,
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.all(Radius.circular(screenWidth * 0.03)),
                 border: Border.all(color: isDark ? MyColors.blue : MyColors.blue, width:  0.2),
-                color: isDark ? MyColors.homeBlueBg : MyColors.creamBg,
+                color: isDark ? MyColors.homeBlueBg : MyColors.lightBlue,
               ),
-              // child: Column(
-              //   children: [
-              //     Row(
-              //       children: [
-              //         Checkbox(value: true, onChanged: (bool? value){}),
-              //         MyText(
-              //           title: 'Yes',
-              //           fontVariation: FontVariation.weight(500),
-              //           fontSize: screenWidth * 0.04,
-              //         ),
-              //       ],
-              //     ),
-              //     SizedBox(width: screenWidth * 0.87, child: Divider(color: MyColors.darkBlue,)),
-              //     Row(
-              //       children: [
-              //         Checkbox(value: true, onChanged: (bool? value){}),
-              //         MyText(
-              //           title: 'Yes',
-              //           fontVariation: FontVariation.weight(500),
-              //           fontSize: screenWidth * 0.04,
-              //         ),
-              //       ],
-              //     ),
-              //   ],
-              // ),
-
               child: Obx(() => RadioGroup<bool>(
                 groupValue: controller.answers[controller.currentIndex.value],
                   onChanged: controller.selectAnswer,
                   child: Column(
-                    children: const [
+                    children: [
                       RadioListTile<bool>(
-                        title: Text('Yes'),
+                        fillColor: WidgetStatePropertyAll(MyColors.blue),
+                        title: MyText(
+                          title: 'Yes',
+                          fontVariation: FontVariation.weight(600),
+                          fontSize: screenWidth * 0.04,
+                          color: isDark ? MyColors.white : MyColors.darkerBlue,
+                        ),
                         value: true,
                       ),
+                      SizedBox(width: screenWidth * 0.85, child: Divider(color: MyColors.darkBlue,)),
                       RadioListTile<bool>(
-                        title: Text('No'),
+                        fillColor: WidgetStatePropertyAll(MyColors.blue),
+                        title: MyText(
+                          title: 'No',
+                          fontVariation: FontVariation.weight(600),
+                          fontSize: screenWidth * 0.04,
+                          color: isDark ? MyColors.white : MyColors.darkerBlue,
+                        ),
                         value: false,
                       ),
                     ],
@@ -117,7 +104,7 @@ class SymptomsCheckerBody extends StatelessWidget {
 
             ),
 
-            SizedBox(height: screenHeight * 0.03,),
+            SizedBox(height: screenHeight * 0.04,),
 
             /// next btn
             SymptomsNextBtn()

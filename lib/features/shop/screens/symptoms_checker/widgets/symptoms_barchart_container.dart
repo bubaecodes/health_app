@@ -36,8 +36,13 @@ class SymptomsBarchartContainer extends StatelessWidget {
           Obx(
             ()=> SizedBox(
               width: screenWidth * 0.3,
-              height: screenHeight * 0.01,
-              child: LinearProgressIndicator(value: controller.progress,),
+              height: screenHeight * 0.012,
+              child: LinearProgressIndicator(
+                value: controller.progress,
+                color: MyColors.blue,
+                backgroundColor: Colors.blue[200],
+                borderRadius: BorderRadius.all(Radius.circular(screenWidth * 0.013)),
+              ),
             ),
           ),
           Transform.scale(

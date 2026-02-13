@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:health_app/features/shop/screens/symptoms_result/widgets/symptoms_result_appbar.dart';
-import 'package:health_app/features/shop/screens/symptoms_result/widgets/symptoms_result_body.dart';
+import 'package:health_app/features/shop/screens/book_physical_consult/widgets/book_physical_appbar.dart';
+import 'package:health_app/features/shop/screens/book_physical_consult/widgets/book_physical_body.dart';
 import 'package:health_app/utils/constants/colors.dart';
 import 'package:health_app/utils/helpers/helper_function.dart';
 
-class SymptomsResultScreen extends StatelessWidget {
-  const SymptomsResultScreen({super.key});
+class BookPhysicalConsultScreen extends StatelessWidget {
+  const BookPhysicalConsultScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -27,8 +27,8 @@ class SymptomsResultScreen extends StatelessWidget {
             ),
             child: Column(
               children: [
-                SymptomsResultAppbar(),
-                SymptomsResultBody()
+                BookPhysicalAppbar(),
+                BookPhysicalBody(),
               ],
             ),
           )
@@ -37,4 +37,3 @@ class SymptomsResultScreen extends StatelessWidget {
     );
   }
 }
-

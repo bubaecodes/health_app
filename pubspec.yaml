@@ -73,6 +73,8 @@ flutter:
     - assets/images/forgot_password/
     - assets/images/shop/home_imgs/
     - assets/images/shop/appointments/
+    - assets/images/shop/book_lab/
+    - assets/images/shop/book_physical_consult/
     - assets/images/shop/
     - assets/fonts/
 

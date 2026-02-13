@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:health_app/common/widgets/mytext.dart';
 import 'package:health_app/utils/constants/colors.dart';
 import 'package:health_app/utils/constants/text_strings.dart';
 import 'package:health_app/utils/helpers/helper_function.dart';
+import 'package:health_app/utils/routes/routes.dart';
 
 class PhysicalConsultationBtn extends StatelessWidget {
   const PhysicalConsultationBtn({super.key});
@@ -14,10 +16,9 @@ class PhysicalConsultationBtn extends StatelessWidget {
     final isDark = MyHelperFunctions.isDarkMode(context);
 
     return ElevatedButton(
-      // onPressed: () {
-      //   controller.openWebsite('https://my.clevelandclinic.org/health/diseases/hepatitis');
-      // },
-      onPressed: (){},
+      onPressed: (){
+        Get.toNamed(Routes.bookPhysicalConsultScreen);
+      },
       style: ButtonStyle(
         minimumSize: WidgetStateProperty.all(
           const Size(0, 0),
